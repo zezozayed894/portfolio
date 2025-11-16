@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 40px;
+    background: #0a3cff;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 5px;
+    font-size: 48px;
+}
+
+.tagline {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    border-left: 6px solid #0a3cff;
+    padding-left: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 30px;
+}
+/* ----------------------------
+   COURSE SUMMARY SECTION
+----------------------------- */
+#course-summary {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.7s ease;
+}
+
+#course-summary h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    border-left: 5px solid #0a3cff;
+    padding-left: 12px;
+    margin-bottom: 15px;
+}
+
+#course-summary h3 {
+    font-size: 1.4rem;
+    color: #000000;
+    border-left: 5px solid #0a3cff; /* Blue bar */
+    padding-left: 12px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#course-summary p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-top: 12px;
+    color: #333;
+}
+
+#course-summary ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+#course-summary ul li {
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+}
+
+
+/* Reuse fadeIn animation if not already included */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
