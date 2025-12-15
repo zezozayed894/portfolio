@@ -4,12 +4,48 @@ body {
     background: #f4f4f4;
     color: #333;
 }
+nav {
+    text-align: center;
+    padding: 40px;
+    background: #0a3cff;
+    color: white;
+    overflow: hidden; /* This ensures that any content that overflows beyond the boundary of our nav bar is not displayed */
+    position: fixed; /* This keeps the navbar at the top of the screen as we scroll */
+    top: 0; /* This ensures no space is displayed above the navbar */
+    width: 100%; /* This makes the navbar span the entire width of the page */
+    z-index: 1; /* This ensures other elements don't display over the navbar */
+    -webkit-animation: moveNav 5s; /* Safari 4.0 - 8.0 */
+    animation: moveNav 5s; /* This makes the moveNav animation last 5 seconds */
+}
+.project-images {
+    display: flex;
+    gap: 20px; /* space between images */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hover-image {
+    width: 300px; /* adjust size */
+    height: 200px; /* adjust size */
+    object-fit: cover; /* crops image nicely */
+    transition: transform 0.3s ease, filter 0.3s ease; /* smooth transition */
+    filter: grayscale(100%); /* initially grayscale */
+    cursor: pointer;
+    border-radius: 8px; /* optional: rounded corners */
+}
+
+.hover-image:hover {
+    transform: scale(1.1); /* pop effect */
+    filter: grayscale(0%); /* color restored */
+}
 
 header {
     text-align: center;
     padding: 40px;
     background: #0a3cff;
     color: white;
+    margin-top: 60px; /* adjust the value as needed */
+
 }
 
 header h1 {
@@ -47,7 +83,7 @@ h2 {
 footer {
     text-align: center;
     padding: 20px;
-    background: #222;
+    background: #0a3cff;
     color: white;
     margin-top: 30px;
 }
@@ -67,7 +103,7 @@ footer {
 
 #course-summary h2 {
     font-size: 2rem;
-    color: #ffffff;
+    color: #000000;
     border-left: 5px solid #0a3cff;
     padding-left: 12px;
     margin-bottom: 15px;
